@@ -1,0 +1,22 @@
+{
+  "description": "用户模型",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "company_id": {
+      "description": "所属公司ids",
+      "type": "number",
+    },
+    "account": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "company_id", "account", "first_name", "surname"]
+}
