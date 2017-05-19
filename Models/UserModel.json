@@ -5,8 +5,8 @@
       "type": "number"
     },
     "company_id": {
-      "description": "所属公司ids",
-      "type": "number",
+      "description": "所属公司id",
+      "type": "number"
     },
     "account": {
       "type": "string"
