@@ -1,0 +1,80 @@
+{
+  "description": "用户模型",
+  "properties": {
+    "user_id": {
+      "description": "用户id",
+      "type": "number"
+    },
+    "company_id": {
+      "description": "所属公司id",
+      "type": "number"
+    },
+    "account": {
+      "description": "登录账号",
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "en_name": {
+      "description": "英文名",
+      "type": "string"
+    },
+    "sex": {
+      "description": "性别 0: 未知 1:男 2:女",
+      "type": "number",
+      "minimu": 0,
+      "maximum": 2
+    },
+    "mobile": {
+      "description": "手机号码",
+      "type": "string"
+    },
+    "e_mail":{
+      "description": "邮箱",
+      "type": "string",
+      "pattern": "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"
+    },
+    "birth_date": {
+      "description": "生日",
+      "type": "number"
+    },
+    "address":{
+      "description": "地址",
+      "type": "object",
+      "$ref": "http://address"
+    },
+    "wechat":{
+      "description": "微信id",
+      "type": "string"
+    },
+    "facebook":{
+      "description": "facebook id",
+      "type": "string"
+    },
+    "twitter":{
+      "description": "twitter id",
+      "type": "string"
+    },
+    "team_id": {
+      "description": "团队id",
+      "type": "number"
+    },
+    "leader_level": {
+      "description": "等级???",
+      "type": "number"
+    },
+    "leader": {
+      "description": "上级",
+      "type": "object"
+    },
+    "director": {
+      "description": "上级???",
+      "type": "object"
+    }
+  },
+  "required": ["user_id", "company_id", "account", "first_name", "surname"]
+}

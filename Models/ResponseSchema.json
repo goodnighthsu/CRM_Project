@@ -13,8 +13,7 @@
             "type": "string"
         },
         "result": {
-            "description": "结果内容",
-            "type": "object"
+            "description": "结果内容"
         }
     },
     "required": ["code", "result"]
